@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const Container1 = () => {
   return (
     <div className="relative w-full h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="src/assets/16-pro.jpg" // Replace with your actual image path
+          src="src/assets/container1/16.png" // Replace with your actual image path
           alt="Hero Background"
           className="object-cover w-full h-full"
         />
@@ -17,20 +17,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-30"></div>
 
       {/* Content Centered on Background */}
-      <div className="flex flex-col items-center justify-center h-full relative z-10 text-center text-white">
+      <div className="flex flex-col items-center justify-center h-full relative z-10 text-center text-white mt-3">
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
-        >
-          iPhone 16 Pro
-        </motion.h1>
-        <motion.h1
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl md:text-2xl font-bold mb-4"
+          className="text-4xl md:text-2xl font-bold mb-24"
         >
           Hello, Apple Intelligence
         </motion.h1>
@@ -68,4 +60,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Container1;
