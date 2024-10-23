@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      <hr className="mb-5 border-2" />
       {/* Links Section */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -287,11 +287,11 @@ const Footer = () => {
         </b>{" "}
         near you. Or call 1-800-MY-APPLE.
       </p>
-      <hr className="mt-5 border" />
+      <hr className="mt-5 border-2" />
       {/* Footer Bottom Section */}
       <div className="py-6 mt-4">
         <div className="container mx-auto flex space-x-20">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <p>Copyright&copy; 2024 Apple Inc. All rights reserved.</p>
           <p>
             <a href="#" className="hover:underline">
               Privacy Policy
