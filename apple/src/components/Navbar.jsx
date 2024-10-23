@@ -18,6 +18,10 @@ const Navbar = () => {
       className={`bg-primary text-white fixed w-full top-0 z-50 transition-all duration-300 ${
         hoveringLink ? "h-80" : "h-14"
       }`}
+      style={{
+        opacity: scrollY > 100 ? 0.9 : 1, // Adjust opacity based on scroll
+        backdropFilter: "blur(10px)", // Optionally add a blur effect
+      }}
     >
       <div className=" max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 lg:pt-3">
         <div className="flex flex-col">
@@ -77,6 +81,7 @@ const Navbar = () => {
           </div>
 
           {/* Extra Links based on hovered item */}
+          {/* Extra Links based on hovered item */}
           {hoveringLink && (
             <motion.div
               className="flex flex-col mt-2"
@@ -87,76 +92,151 @@ const Navbar = () => {
             >
               {hoveringLink === "store" && (
                 <>
+                  <p className="font-bold">Shop</p>
+                  <a
+                    href="#Shopthelatest"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
+                  >
+                    Shop The Latest
+                  </a>
+                  <a
+                    href="#mac"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
+                  >
+                    Mac
+                  </a>
+                  <a
+                    href="#ipad"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
+                  >
+                    iPad
+                  </a>
                   <a
                     href="#iphones"
-                    className="px-4 py-2 lg:pl-40 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     iPhones
                   </a>
                   <a
-                    href="#macbooks"
-                    className="px-4 py-2 lg:pl-40 text-sm font-medium hover:text-gray-400"
+                    href="#visionpro"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
-                    MacBooks
+                    Apple Vision Pro
                   </a>
                   <a
                     href="#accessories"
-                    className="px-4 py-2 lg:pl-40 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     Accessories
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Category 1</p>
+                        <p className="cursor-pointer">Category 2</p>
+                        <p className="cursor-pointer">Category 3</p>
+                        <p className="cursor-pointer">Category 4</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-col">
+                      <p className="font-bold">Shop Special Store</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Store Category 1</p>
+                        <p className="cursor-pointer">Store Category 2</p>
+                        <p className="cursor-pointer">Store Category 3</p>
+                        <p className="cursor-pointer">Store Category 4</p>
+                        <p className="cursor-pointer">Store Category 5</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "mac" && (
                 <>
+                  <p className="font-bold">Mac</p>
                   <a
                     href="#macbookair"
-                    className="px-4 py-2 lg:pl-56 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     MacBook Air
                   </a>
                   <a
                     href="#macbookpro"
-                    className="px-4 py-2 lg:pl-56 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     MacBook Pro
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Mac Accessories</p>
+                        <p className="cursor-pointer">Mac Software</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "ipad" && (
                 <>
+                  <p className="font-bold">iPad</p>
                   <a
                     href="#ipadpro"
-                    className="px-4 py-2 lg:pl-72 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     iPad Pro
                   </a>
                   <a
                     href="#ipadair"
-                    className="px-4 py-2 lg:pl-72 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     iPad Air
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">iPad Accessories</p>
+                        <p className="cursor-pointer">iPad Apps</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "iphone" && (
                 <>
+                  <p className="font-bold">iPhone</p>
                   <a
                     href="#iphone14"
-                    className="px-4 py-2 lg:pl-80 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     iPhone 14
                   </a>
                   <a
                     href="#iphone14pro"
-                    className="px-4 py-2 lg:pl-80 text-sm font-medium hover:text-gray-400"
+                    className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
                     iPhone 14 Pro
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">iPhone Accessories</p>
+                        <p className="cursor-pointer">iPhone Cases</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "watch" && (
                 <>
+                  <p className="font-bold">Apple Watch</p>
                   <a
                     href="#applewatchseries7"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
@@ -169,10 +249,21 @@ const Navbar = () => {
                   >
                     Apple Watch SE
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Watch Bands</p>
+                        <p className="cursor-pointer">Watch Apps</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "airpods" && (
                 <>
+                  <p className="font-bold">AirPods</p>
                   <a
                     href="#airpodspro"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
@@ -185,10 +276,20 @@ const Navbar = () => {
                   >
                     AirPods Max
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">AirPods Accessories</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "tv" && (
                 <>
+                  <p className="font-bold">Apple TV</p>
                   <a
                     href="#appletv4k"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
@@ -201,10 +302,21 @@ const Navbar = () => {
                   >
                     Apple TV HD
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">TV Shows</p>
+                        <p className="cursor-pointer">Movies</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "entertainment" && (
                 <>
+                  <p className="font-bold">Entertainment</p>
                   <a
                     href="#applemusic"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
@@ -217,10 +329,21 @@ const Navbar = () => {
                   >
                     Apple TV+
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Music Playlists</p>
+                        <p className="cursor-pointer">TV Shows</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
+
               {hoveringLink === "support" && (
                 <>
+                  <p className="font-bold">Support</p>
                   <a
                     href="#contactsupport"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
@@ -228,11 +351,20 @@ const Navbar = () => {
                     Contact Support
                   </a>
                   <a
-                    href="#faqs"
+                    href="#techsupport"
                     className="px-4 py-2 text-sm font-medium hover:text-gray-400"
                   >
-                    FAQs
+                    Tech Support
                   </a>
+                  <div className="flex ml-40 absolute top-0 left-10 space-x-10">
+                    <div className="flex flex-col">
+                      <p className="font-bold">Quick Link</p>
+                      <div className="flex flex-col space-y-1">
+                        <p className="cursor-pointer">Return Policies</p>
+                        <p className="cursor-pointer">Warranty Info</p>
+                      </div>
+                    </div>
+                  </div>
                 </>
               )}
             </motion.div>
