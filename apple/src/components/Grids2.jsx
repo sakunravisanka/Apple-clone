@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeroSection = () => {
+const Grids2 = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-left p-4">
       {/* Left Grid */}
@@ -51,4 +51,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Grids2;
