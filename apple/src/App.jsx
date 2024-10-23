@@ -8,6 +8,7 @@ import Grids2 from "./components/Grids2";
 import Grids3 from "./components/Grids3";
 import Slides from "./components/Slides";
 import MarqueeSlider from "./components/MarqueeSlider";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <Grids3 />
       <Slides />
       <MarqueeSlider />
+      <Footer />
     </>
   );
 }
