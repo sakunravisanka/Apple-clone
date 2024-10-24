@@ -43,7 +43,7 @@ const MarqueeSlider = () => {
       <div className="absolute bottom-4 right-6 z-10">
         <button
           onClick={togglePlayPause}
-          className="bg-gray-800 text-white p-2 rounded-full focus:outline-none"
+          className="bg-white text-black p-2 rounded-full focus:outline-none"
         >
           {isPaused ? (
             <span className="material-icons">R</span>
