@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-sm text-gray-600 pt-8 pb-20 p-44">
+    <footer className="bg-gray-100 text-sm text-gray-600 pt-8 pb-12 px-4 sm:px-8 md:px-12 lg:px-20">
       {/* Information Section */}
-      <div className="container mx-auto px-4 mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+      <div className="container mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
             <p>
               1. Apple Intelligence will be available in beta on all iPhone 16
@@ -76,9 +76,8 @@ const Footer = () => {
       </div>
       <hr className="mb-5 border-2" />
       {/* Links Section */}
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          {/* Shop and Learn */}
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div>
             <h5 className="font-bold text-gray-800 mb-4">Shop and Learn</h5>
             <ul>
@@ -103,8 +102,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Account */}
           <div>
             <h5 className="font-bold text-gray-800 mb-4">Account</h5>
             <ul>
@@ -141,8 +138,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Apple Store */}
           <div>
             <h5 className="font-bold text-gray-800 mb-4">Apple Store</h5>
             <ul>
@@ -168,8 +163,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* For Business, Education, Healthcare, Government */}
           <div>
             <h5 className="font-bold text-gray-800 mb-4">For Business</h5>
             <ul>
@@ -225,8 +218,6 @@ const Footer = () => {
               )}
             </ul>
           </div>
-
-          {/* Apple Values and About Apple */}
           <div>
             <h5 className="font-bold text-gray-800 mb-4">Apple Values</h5>
             <ul>
@@ -267,11 +258,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p>
+      <p className="mt-8 text-center">
         More ways to shop:{" "}
         <b>
           <u>
-            {" "}
             <a href="" className="text-blue-700">
               Find an Apple Store
             </a>
@@ -287,40 +277,9 @@ const Footer = () => {
         </b>{" "}
         near you. Or call 1-800-MY-APPLE.
       </p>
-      <hr className="mt-5 border-2" />
-      {/* Footer Bottom Section */}
-      <div className="py-6 mt-4">
-        <div className="container mx-auto flex space-x-20">
-          <p>Copyright&copy; 2024 Apple Inc. All rights reserved.</p>
-          <p>
-            <a href="#" className="hover:underline">
-              Privacy Policy
-            </a>{" "}
-            |{" "}
-            <a href="#" className="hover:underline">
-              Terms of Use
-            </a>{" "}
-            |{" "}
-            <a href="#" className="hover:underline">
-              Sales and Refunds
-            </a>{" "}
-            |{" "}
-            <a href="#" className="hover:underline">
-              Legal
-            </a>{" "}
-            |{" "}
-            <a href="#" className="hover:underline">
-              Site Map
-            </a>
-          </p>
-          <p>
-            {" "}
-            <a href="#" className="hover:underline">
-              United States
-            </a>
-          </p>
-        </div>
-      </div>
+      <p className="text-center">
+        Copyright © 2023 Apple Inc. All rights reserved.
+      </p>
     </footer>
   );
 };
