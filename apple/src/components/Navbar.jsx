@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon for Mobile */}
-          <div className="md:hidden ml-80">
+          <div className="md:hidden ml-96">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
@@ -173,16 +173,6 @@ const Navbar = () => {
                       <p className="cursor-pointer">Category 2</p>
                       <p className="cursor-pointer">Category 3</p>
                       <p className="cursor-pointer">Category 4</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-col">
-                    <p className="font-bold">Shop Special Store</p>
-                    <div className="flex flex-col space-y-1">
-                      <p className="cursor-pointer">Store Category 1</p>
-                      <p className="cursor-pointer">Store Category 2</p>
-                      <p className="cursor-pointer">Store Category 3</p>
-                      <p className="cursor-pointer">Store Category 4</p>
-                      <p className="cursor-pointer">Store Category 5</p>
                     </div>
                   </div>
                 </div>

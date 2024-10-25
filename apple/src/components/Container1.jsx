@@ -51,12 +51,12 @@ const Container1 = () => {
         </motion.h1>
 
         {/* Responsive Buttons */}
-        <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-10 sm:mt-64">
+        <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-40 sm:mt-64">
           <motion.button
             initial={{ scale: 0 }}
             animate={{ scale: isVisible ? 1 : 0 }}
-            transition={{ duration: 1.5 }}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full"
+            transition={{ duration: 1.0 }}
+            className="bg-blue-500 hover:bg-blue-600 text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Learn More
           </motion.button>
@@ -65,7 +65,7 @@ const Container1 = () => {
             initial={{ scale: 0 }}
             animate={{ scale: isVisible ? 1 : 0 }}
             transition={{ duration: 1.5 }}
-            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full"
+            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Buy
           </motion.button>
@@ -75,7 +75,7 @@ const Container1 = () => {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: isVisible ? 0 : 50, opacity: isVisible ? 1 : 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.0 }}
           className="mt-4 text-sm sm:text-base lg:text-lg"
         >
           Apple Intelligence Coming This Fall

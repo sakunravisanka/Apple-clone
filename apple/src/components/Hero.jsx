@@ -22,7 +22,7 @@ const HeroSection = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-4"
         >
           iPhone 16 Pro
         </motion.h1>
@@ -30,18 +30,18 @@ const HeroSection = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-4"
+          className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 sm:mb-4"
         >
           Hello, Apple Intelligence
         </motion.h2>
 
         {/* Responsive Buttons */}
-        <div className="flex flex-col sm:flex-row sm:space-x-4 mt-10 space-y-4 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row sm:space-x-4 mt-10 sm:mt-64 space-y-4 sm:space-y-0">
           <motion.button
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Learn More
           </motion.button>
@@ -50,7 +50,7 @@ const HeroSection = () => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg"
+            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Buy
           </motion.button>
@@ -61,7 +61,7 @@ const HeroSection = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mt-4 text-sm sm:text-base lg:text-lg"
+          className="mt-2 sm:mt-4 text-xs sm:text-base lg:text-lg"
         >
           Apple Intelligence Coming This Fall
         </motion.div>

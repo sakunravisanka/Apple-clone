@@ -58,7 +58,7 @@ const Container2 = () => {
             initial={{ scale: 0 }}
             animate={{ scale: isVisible ? 1 : 0 }}
             transition={{ duration: 1.5 }}
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full"
+            className="bg-blue-500 hover:bg-blue-600 text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Learn More
           </motion.button>
@@ -67,7 +67,7 @@ const Container2 = () => {
             initial={{ scale: 0 }}
             animate={{ scale: isVisible ? 1 : 0 }}
             transition={{ duration: 1.5 }}
-            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-2 sm:py-3 px-6 sm:px-8 rounded-full"
+            className="border-2 border-blue-500 hover:bg-blue-600 text-blue-500 hover:text-white py-1 sm:py-2 px-4 sm:px-6 rounded-full text-sm sm:text-base"
           >
             Buy
           </motion.button>
